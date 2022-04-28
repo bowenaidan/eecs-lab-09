@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(241, 207, 207);
+}
+
+h2 {
+  text-align: center;
+}
+
+.btns {
+  display: inline;
+  font-size: 20px;
+}
+
+#img_group{
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  text-align: center;
+}
+
+#receipt {
+  text-align: center;
+}
+
+#receipt_table {
+  margin-left : auto;
+  margin-right : auto;
+  width : 50%;
+  border : 2px solid;
+  border-color: black;
+}
+
+#receipt_table th, td {
+  padding : 5px;
+  text-align: left;
+}
+
+#receipt_table th {
+  background-color : lightgray;
+}
+
+#receipt_table td {
+  background-color : white;
+}

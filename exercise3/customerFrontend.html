@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 9</title>
+    <link rel="stylesheet" href="style.css">
+	<script src="formChecker.js"></script>
+</head>
+<body>
+    <h1>Furniture Store</h1>
+      <img id="pictures" height="300" width="450" src="./chair.jpg">
+      <img id="pictures" height="300" width="450" src="./door.jpg">
+      <img id="pictures" height="300" width="450" src="./table.jpg"><br><br>
+      <h2>Order Form</h2>
+      <form id="order_form" action="./customerBackend.php" method="post">
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="Username" placeholder="email">
+        <label for="password">Password: </label>
+        <input type="password" id="password" name="Password" placeholder="password"><br>
+        <label for="Table">Enter a quantity of tables($50 each):</label>
+        <input type="number" id="Table" name="Table"><br>
+        <label for="Chair">Enter a quantity of chairs($25 each):</label>
+        <input type="number" id="Chair" name="Chair"><br>
+        <label for="Door">Enter a quantity of doors($100 each):</label>
+        <input type="number" id="Door" name="Door"><br><br>
+        <h3>Shipping</h3>
+        <input type="radio" value="seven_day" name="shipping">
+        <label for="seven_day">Free Seven Day</label><br>
+        <input type="radio" value="three_day" name="shipping">
+        <label for="three_day">$5 Three Day</label><br>
+        <input type="radio" value="overnight" name="shipping">
+        <label for="overnight">$50 Overnight</label><br><br>
+        <input type="reset" class="btns" id="reset"></button>
+        <input type="submit" class="btns" value="Place Order" onclick="check_form()">
+      </form>
+ </body>
+ </html>
